@@ -12,15 +12,6 @@ def write(msg):  # o programa vai escrever na tela o texto digitado pelo usuári
     with open(msg) as r:
         print(r.read())
 
-'''
-# mesma coisa do comando acima
-
-def write(msg): # o programa vai escrever na tela o texto digitado pelo usuário
-    arquivo = open(msg, 'r')
-    for linha in arquivo.readlines():
-        print(linha.rstrip())
-    arquivo.close()'''
-
 while True:
     u = input('\n\nW para criar um arquivo. \nR para ler um arquivo. \nS para sair.\n\nOpção: ')
     d = u.lower()
